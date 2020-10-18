@@ -22,8 +22,8 @@ public class LineCounterProcessor
     @Override
     public Pair<String, Integer> process(@Nonnull String line) {
         randomSleep();
-        // TODO: NotImplemented: подсчет кол-ва символов в строке + произвольная задержка randomSleep()
-        return null;
+        // TODO: NotImplemented: подсчет кол-ва символов в строке + произвольная задержка randomSleep() -> done
+        return Pair.of(line, line.length());
     }
 
     private void randomSleep() {
